@@ -2,8 +2,8 @@ def stock_picker(stocks)
 
   profits = {}
 
-  sorted_arr = stocks.sort 
-  sorted_arr.each do |min|
+  sorted_stocks = stocks.sort 
+  sorted_stocks.each do |min|
     min_index = stocks.index(min)
     previous_days = stocks.select {|element| stocks.index(element) < min_index}
 
